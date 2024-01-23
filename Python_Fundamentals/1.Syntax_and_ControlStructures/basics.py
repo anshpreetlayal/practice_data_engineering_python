@@ -50,6 +50,31 @@ print("Data Pipeline Name:", data_pipeline_name)
 print("Database Table Name:", database_table_name)
 print("Is Data Clean?", is_data_clean)
 
+# ----------------------------------------------
+# Operators: Arithmetic, Comparison, Logical
+# ----------------------------------------------
+
+# Arithmetic operators
+addition_result = number_of_servers + 5
+multiplication_result = average_response_time * 2
+
+# Comparison operators
+is_pipeline_matched = data_pipeline_name == "ETL_Pipeline"
+is_experience_greater = data_engineer_experience > 2
+
+# Logical operators
+is_data_ready = is_data_clean and is_pipeline_matched
+
+# Printing results of operators
+print("Addition Result:", addition_result)
+print("Multiplication Result:", multiplication_result)
+print("Is Pipeline Matched?", is_pipeline_matched)
+print("Is Experience Greater than 2?", is_experience_greater)
+print("Is Data Ready for Analysis?", is_data_ready)
+
+# ----------------------------------------------
+# Conclusion
+# ----------------------------------------------
 
 print("Python Fundamentals for Data Engineering - Basics.py execution complete.")
 
