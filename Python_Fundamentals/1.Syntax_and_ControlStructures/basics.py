@@ -28,7 +28,30 @@ data_engineer_name = "Ansh"  # String variable storing the name of the data engi
 print("Data Engineer:", data_engineer_name)
 print("Experience (years):", data_engineer_experience)
 
+# ----------------------------------------------
+# Data Types: Numeric, String, and Boolean
+# ----------------------------------------------
 
+# Numeric variables
+number_of_servers = 10
+average_response_time = 25.5
+
+# String variables
+data_pipeline_name = "ETL_Pipeline"
+database_table_name = "customer_data"
+
+# Boolean variable
+is_data_clean = True
+
+# Printing information about the data
+print("Number of Servers:", number_of_servers)
+print("Average Response Time:", average_response_time)
+print("Data Pipeline Name:", data_pipeline_name)
+print("Database Table Name:", database_table_name)
+print("Is Data Clean?", is_data_clean)
+
+
+print("Python Fundamentals for Data Engineering - Basics.py execution complete.")
 
 
 
