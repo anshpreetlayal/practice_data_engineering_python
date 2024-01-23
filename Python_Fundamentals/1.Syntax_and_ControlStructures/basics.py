@@ -13,6 +13,7 @@ print(x)
 
 #strings
 name="ansh"
+print(name)
 
 
 
