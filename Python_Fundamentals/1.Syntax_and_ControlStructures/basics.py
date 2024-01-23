@@ -12,9 +12,7 @@ print(x)
 
 
 #strings
-
-
-
+name="ansh"
 
 
 
