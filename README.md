@@ -30,7 +30,6 @@ This repository presents my journey through Python in the realm of data engineer
 - `data_structures.py`: Explores the utilization of lists, dictionaries, sets, and tuples.
 - `algorithms/sorting_algorithms.py`: Implements fundamental algorithms for sorting, searching, and data manipulation.
 
-(_Continuation of this format is maintained throughout the document..._)
 
 ## Advanced Python Concepts in Data Engineering
 

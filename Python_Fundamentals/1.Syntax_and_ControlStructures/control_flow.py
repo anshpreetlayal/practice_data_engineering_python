@@ -21,3 +21,19 @@ if is_raining:
 else:
     print("No need for an umbrella today.")
 
+# ----------------------------------------------
+# while Loop
+# ----------------------------------------------
+
+# Sample data for while loop
+counter = 0
+
+# Simple while loop
+while counter < 5:
+    print("Current count:", counter)
+    counter += 1
+
+# While loop with a condition
+while temperature > 20:
+    print("The temperature is still high:", temperature)
+    temperature -= 2
