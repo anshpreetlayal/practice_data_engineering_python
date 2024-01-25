@@ -2,7 +2,6 @@
 
 This repository documents my journey through Python in the realm of data engineering. It's a compilation of Python scripts and projects, covering a spectrum from foundational concepts to sophisticated applications within data engineering.
 
-
 # Python Fundamentals for Data Engineering
 
 ### Syntax and Control Structures
@@ -45,4 +44,16 @@ This repository documents my journey through Python in the realm of data enginee
 - `cloud_deployment/deployment_instructions.md`: Provides detailed instructions for deploying Python applications in the cloud.
 
 
+----------------------------------------------------------------------------------
+## Contributions
+
+Contributions are welcome! If you find issues, have suggestions, or want to add more content, feel free to open an issue or submit a pull request. 
+
+## License
+
+This project is licensed under the [Apache License, Version 2.0](LICENSE). Feel free to use the code, modify, and distribute it in your projects. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+Special thanks to the Python community for their continuous support and inspiration. Additionally, gratitude to the creators of the libraries and frameworks used in this project.
 
