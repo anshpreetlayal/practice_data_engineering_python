@@ -15,9 +15,12 @@ def add_numbers(x, y):
     return x + y
 
 # Function with default parameter value
-
+def power(base, exponent=2):
+    return base ** exponent
 
 # Function with variable number of arguments
+def print_args(*args):
+    print("Arguments:", args)
 
 
 
