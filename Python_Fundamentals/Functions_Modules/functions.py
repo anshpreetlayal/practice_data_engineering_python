@@ -28,7 +28,32 @@ def display_info(name, age, city):
     print("Age:", age)
     print("City:", city)
 
+# Function with a mix of positional and keyword arguments
+def complex_function(a, b, *args, x=0, y=0, **kwargs):
+    print("a:", a)
+    print("b:", b)
+    print("Additional arguments:", args)
+    print("x:", x)
+    print("y:", y)
+    print("Additional keyword arguments:", kwargs)
 
+# ----------------------------------------------
+# Calling Functions
+# ----------------------------------------------
+
+# Calling the greet function
+greet()
+
+# Calling the add_numbers function
+result_sum = add_numbers(5, 3)
+print("Sum of numbers:", result_sum)
+
+# Calling the power function
+result_power = power(2, 3)
+print("2^3:", result_power)
+
+# Calling the print_args function
+print_args("arg1", 2, True, "hello")
 
 # ----------------------------------------------
 # Function 1: calculate_average
