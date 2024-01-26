@@ -37,6 +37,28 @@ def complex_function(a, b, *args, x=0, y=0, **kwargs):
     print("y:", y)
     print("Additional keyword arguments:", kwargs)
 
+
+# Function : calculate_average
+# This function takes a list of numbers as input and returns their average.
+from statistics import mean
+# Define the  function
+def calculate_average(numbers):
+    return mean(numbers)
+
+input_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+average_result = calculate_average(input_numbers)
+print(f"The average of {input_numbers} is: {average_result}")
+
+
+# Function : max_value
+def max_value(inputlist):
+    return max(inputlist)
+    
+numbers = [5, 2, 8, 1, 7, 18]
+max_result = max_value(numbers)
+print(f"The maximum value in {numbers} is: {max_result}")
+    
+
 # ----------------------------------------------
 # Calling Functions
 # ----------------------------------------------
@@ -55,38 +77,12 @@ print("2^3:", result_power)
 # Calling the print_args function
 print_args("arg1", 2, True, "hello")
 
-# ----------------------------------------------
-# Function 1: calculate_average
-# ----------------------------------------------
-# This function takes a list of numbers as input and returns their average.
-# - Input: List of numbers
-# - Output: Average of the input numbers
+# Calling the display_info function
+display_info(name="Alice", age=30, city="Wonderland")
 
-# Import the mean function from the statistics module
-from statistics import mean
-
-# Define the  function
-def calculate_average(numbers):
-    return mean(numbers)
-
-input_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-average_result = calculate_average(input_numbers)
-print(f"The average of {input_numbers} is: {average_result}")
-
-
+# Calling the complex_function with a mix of arguments
+complex_function(1, 2, 3, 4, x=5, y=6, z=7, w=8)
 
 # ----------------------------------------------
-# Function 2: max_value
+# Conclusion
 # ----------------------------------------------
-# This function finds and returns the maximum value in a given list.
-# - Input: List of comparable values
-# - Output: Maximum value in the input list
-
-def max_value(inputlist):
-    return max(inputlist)
-    
-numbers = [5, 2, 8, 1, 7, 18]
-max_result = max_value(numbers)
-print(f"The maximum value in {numbers} is: {max_result}")
-    
-
