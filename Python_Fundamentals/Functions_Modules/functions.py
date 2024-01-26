@@ -14,19 +14,26 @@ from statistics import mean
 def calculate_average(numbers):
     return mean(numbers)
 
-input_numbers = [1, 2, 3, 4, 5]
+input_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 average_result = calculate_average(input_numbers)
 print(f"The average of {input_numbers} is: {average_result}")
 
 
 
 # ----------------------------------------------
-# Function 2: find_max_value
+# Function 2: max_value
 # ----------------------------------------------
 # This function finds and returns the maximum value in a given list.
 # - Input: List of comparable values
 # - Output: Maximum value in the input list
 
+def max_value(inputlist):
+    return max(inputlist)
+    
+numbers = [5, 2, 8, 1, 7, 18]
+max_result = max_value(numbers)
+print(f"The maximum value in {numbers} is: {max_result}")
+    
 # ----------------------------------------------
 # Function 3: is_palindrome
 # ----------------------------------------------
