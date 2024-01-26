@@ -10,7 +10,14 @@ def greet():
     print("Hello! Welcome to the world of functions.")
 
 
+# Function with parameters
+def add_numbers(x, y):
+    return x + y
 
+# Function with default parameter value
+
+
+# Function with variable number of arguments
 
 
 
