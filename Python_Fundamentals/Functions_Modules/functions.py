@@ -40,6 +40,21 @@ print(f"The maximum value in {numbers} is: {max_result}")
 # This function checks whether a given string is a palindrome and returns a boolean.
 # - Input: String
 # - Output: True if the input is a palindrome, False otherwise
+# ----------------------------------------------
+# Function 3: is_palindrome
+# ----------------------------------------------
+# This function checks whether a given string is a palindrome and returns a boolean.
+# Parameters:
+#   - input_str: The string to be checked for palindrome
+# Returns:
+#   - True if the input string is a palindrome, False otherwise
+def is_palindrome(input_str):
+    # Your palindrome checking logic goes here
+    # Compare the original string with its reverse to check for palindrome
+
+    # Example: Check if the input string is a palindrome
+    reversed_str = input_str[::-1]
+    return input_str == reversed_str
 
 # ----------------------------------------------
 # Function 4: data_processing
