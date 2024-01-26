@@ -7,6 +7,19 @@
 # - Input: List of numbers
 # - Output: Average of the input numbers
 
+# Import the mean function from the statistics module
+from statistics import mean
+
+# Define the  function
+def calculate_average(numbers):
+    return mean(numbers)
+
+input_numbers = [1, 2, 3, 4, 5]
+average_result = calculate_average(input_numbers)
+print(f"The average of {input_numbers} is: {average_result}")
+
+
+
 # ----------------------------------------------
 # Function 2: find_max_value
 # ----------------------------------------------
