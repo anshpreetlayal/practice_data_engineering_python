@@ -22,7 +22,11 @@ def power(base, exponent=2):
 def print_args(*args):
     print("Arguments:", args)
 
-
+# Function with keyword arguments
+def display_info(name, age, city):
+    print("Name:", name)
+    print("Age:", age)
+    print("City:", city)
 
 
 
