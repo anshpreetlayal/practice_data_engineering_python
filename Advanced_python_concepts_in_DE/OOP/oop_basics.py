@@ -80,3 +80,23 @@ class Dessert(FoodItem):
         """
         self.calories += extra_calories
         print(f"Enjoying {self.name}! Now it has {self.calories} calories.")
+
+# ----------------------------------------------
+# Main Program
+# ----------------------------------------------
+
+# Create instances of the Dessert class
+dessert1 = Dessert("Chocolate Cake", "Chocolate", 300)
+dessert2 = Dessert("Strawberry Ice Cream", "Strawberry", 150)
+
+# Display detailed information about the desserts
+dessert1.display_info()
+dessert2.display_info()
+
+# Enjoy the desserts, adding extra calories
+dessert1.enjoy(50)
+dessert2.enjoy(20)
+
+# Display updated information after enjoying the desserts
+dessert1.display_info()
+dessert2.display_info()
