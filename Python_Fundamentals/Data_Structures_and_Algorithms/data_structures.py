@@ -1,1 +1,2 @@
-#
+'''Start with understanding the basics of data structures like lists, sets, dictionaries, tuples, and more.
+Implement various data structures and perform operations on them (e.g., insertion, deletion, searching).'''
