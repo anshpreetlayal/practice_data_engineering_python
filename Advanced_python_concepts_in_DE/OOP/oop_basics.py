@@ -57,3 +57,26 @@ class Dessert(FoodItem):
         """
         super().__init__(name, calories)
         self.flavor = flavor
+
+# Overriding the display_info method from the base class
+    def display_info(self):
+        """
+        Overridden method to display detailed information about the dessert.
+
+        No parameters.
+        Returns: None
+        """
+        print(f"Dessert: {self.name} - Flavor: {self.flavor}, Calories: {self.calories} kcal")
+
+    # Additional method specific to desserts
+    def enjoy(self, extra_calories=0):
+        """
+        Method to enjoy the dessert and add extra calories.
+
+        Parameters:
+        - extra_calories (int): Additional calories to add (default is 0).
+
+        Returns: None
+        """
+        self.calories += extra_calories
+        print(f"Enjoying {self.name}! Now it has {self.calories} calories.")
