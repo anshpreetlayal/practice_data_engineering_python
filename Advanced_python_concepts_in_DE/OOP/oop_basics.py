@@ -26,4 +26,12 @@ class FoodItem(ABC):
         """
         pass
 
-   
+    def nutritional_info(self):
+        """
+        Method to display nutritional information about the food item.
+
+        No parameters.
+        Returns: None
+        """
+        print(f"{self.name} - Calories: {self.calories} kcal")
+
