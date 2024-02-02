@@ -4,32 +4,43 @@ This repository documents my journey through Python in the realm of data enginee
 
 # Python Fundamentals for Data Engineering
 
-### Syntax and Control Structures
+## Syntax and Control Structures
 
-- `basics.py`: Covers elementary Python syntax, data types, and variable declarations.
-- `control_structures.py`: Includes if-else conditions, for and while loops, along with try-except blocks.
+- **`basics.py`**: Covers elementary Python syntax, data types, and variable declarations.
+- **`control_structures.py`**: Includes if-else conditions, for and while loops, along with try-except blocks.
 
-### Functions and Modules
+## Functions and Modules
 
-- `functions.py`: Demonstrates the creation and utilization of functions, handling parameters and return values.
-- `custom_modules/my_module.py`: Focuses on crafting and importing custom modules and libraries.
+- **`functions.py`**: Demonstrates the creation and utilization of functions, handling parameters and return values.
 
-### Data Structures and Algorithms
+## Data Structures and Algorithms
 
-- `data_structures.py`: Explores the utilization of lists, dictionaries, sets, and tuples.
-- `algorithms/sorting_algorithms.py`: Implements fundamental algorithms for sorting, searching, and data manipulation.
+- **`data_structures.py`**: Explores the utilization of lists, dictionaries, sets, and tuples.
+- **`algorithms/sorting_algorithms.py`**: Implements fundamental algorithms for sorting, searching, and data manipulation.
+- **`regex_extraction.py`**: Utilizes regular expressions for string manipulation.
+- **`read_write_files.py`**: Covers reading from and writing to files.
 
 # Advanced Python Concepts in Data Engineering
 
-### Object-Oriented Programming
+## Web Data Retrieval and APIs
 
-- `oop_basics.py`: Engages in creating classes, objects, inheritance, and polymorphism.
-- `design_patterns.py`: Explores design patterns and adheres to best practices in Object-Oriented Programming.
+- **`web_api_interaction.py`**: Interacts with web APIs and demonstrates data retrieval.
+- **`web_data_retrieval.py`**: Includes scripts for web scraping and working with web data.
 
-### Concurrency and Parallel Processing
+## XML Data Handling
 
-- `multithreading.py`: Addresses the implementation of multithreading concepts.
-- `asyncio_implementation.py`: Explores asynchronous programming with asyncio.
+- **`xml_data_handling.py`**: Explores parsing and handling XML data.
+
+## Object-Oriented Programming
+
+- **`oop_basics.py`**: Engages in creating classes, objects, inheritance, and polymorphism.
+- **`design_patterns.py`**: Explores design patterns and adheres to best practices in Object-Oriented Programming.
+
+## Concurrency and Parallel Processing
+
+- **`multithreading.py`**: Addresses the implementation of multithreading concepts.
+- **`asyncio_implementation.py`**: Explores asynchronous programming with asyncio.
+
 
 
 # Showcasing Real-world Python Projects in Data Engineering
