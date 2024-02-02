@@ -52,3 +52,22 @@ class Pizza(ABC):
         Returns: None
         """
         print(f"Boxing {self.name} pizza.")
+
+
+# ----------------------------------------------
+# Concrete Product Classes: MargheritaPizza, PepperoniPizza
+# ----------------------------------------------
+
+class MargheritaPizza(Pizza):
+    """
+    Concrete Product: Margherita Pizza.
+    """
+    def prepare(self):
+        print("Preparing Margherita pizza with tomato sauce and mozzarella.")
+
+class PepperoniPizza(Pizza):
+    """
+    Concrete Product: Pepperoni Pizza.
+    """
+    def prepare(self):
+        print("Preparing Pepperoni pizza with tomato sauce, mozzarella, and pepperoni.")
