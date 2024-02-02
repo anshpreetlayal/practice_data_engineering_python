@@ -1,0 +1,54 @@
+from abc import ABC, abstractmethod
+
+# ----------------------------------------------
+# Product Interface: Pizza
+# ----------------------------------------------
+
+class Pizza(ABC):
+    """
+    Pizza interface (Product): Represents a pizza.
+
+    Attributes:
+    - name (str): The name of the pizza.
+    - toppings (list): List of toppings on the pizza.
+    """
+    def __init__(self, name):
+        self.name = name
+        self.toppings = []
+
+    @abstractmethod
+    def prepare(self):
+        """
+        Abstract method for preparing the pizza.
+
+        No parameters.
+        Returns: None
+        """
+        pass
+
+    def bake(self):
+        """
+        Method to bake the pizza.
+
+        No parameters.
+        Returns: None
+        """
+        print(f"Baking {self.name} pizza.")
+
+    def cut(self):
+        """
+        Method to cut the pizza.
+
+        No parameters.
+        Returns: None
+        """
+        print(f"Cutting {self.name} pizza.")
+
+    def box(self):
+        """
+        Method to box the pizza.
+
+        No parameters.
+        Returns: None
+        """
+        print(f"Boxing {self.name} pizza.")
