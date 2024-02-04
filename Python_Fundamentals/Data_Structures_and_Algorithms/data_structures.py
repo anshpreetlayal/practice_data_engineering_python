@@ -86,3 +86,19 @@ new_tuple = my_tuple + (6, 7, 8)
 # Tuple immutability
 # Uncommenting the line below would result in an error
 # my_tuple[2] = 10
+
+
+# ----------------------------------------------
+# Dictionary Operations
+# ----------------------------------------------
+
+# Adding key/value pairs
+my_dict['gender'] = 'Male'
+
+# Retrieving value using key
+age = my_dict['age']
+print("Age:", age)
+
+# Checking if a key exists
+if 'city' in my_dict:
+    print("City exists in the dictionary.")
