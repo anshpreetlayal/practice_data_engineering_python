@@ -121,3 +121,18 @@ my_dict.clear()
 
 # Dictionary comprehension
 new_dict = {key: value * 2 for key, value in my_dict.items()}
+
+# Nested dictionaries
+nested_dict = {'person': {'name': 'Alice', 'age': 30, 'address': {'city': 'Wonderland', 'zip': '12345'}}}
+city = nested_dict['person']['address']['city']
+
+# Merging dictionaries
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'b': 3, 'c': 4}
+merged_dict = {**dict1, **dict2}
+
+# Checking equality of two dictionaries
+is_equal = dict1 == dict2
+
+# Dictionary comprehension with condition
+even_squared_values = {num: num**2 for num in range(10) if num % 2 == 0}
