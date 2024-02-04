@@ -1,27 +1,26 @@
-'''
-todo:
-Start with understanding the basics of data structures like lists, sets, dictionaries, tuples, and more.
-Practice using dictionaries to store and retrieve key/value pairs.
-Create programs that perform operations on dictionary data.
-Tuples for Multi-Step Tasks:
-
-Develop programs that involve multi-step tasks using tuples.
-Explore sorting and looping with tuples.
-Implement various data structures and perform operations on them (e.g., insertion, deletion, searching).'''
-
 # =======================================
-#      Sorting Algorithms Implementation
+#      Data Structures and Operations
 # =======================================
 
 # Python Fundamentals for Data Engineering
-# algorithms/sorting_algorithms.py: Implements fundamental algorithms for sorting, searching, and data manipulation.
-
-# Bubble Sort
+# data_structures_and_operations.py: Covers basic data structures and operations.
 
 # ----------------------------------------------
-# Conclusion
+# Basics of Data Structures
 # ----------------------------------------------
 
-print("Sorting Algorithms - sorting_algorithms.py execution complete.")
+# Lists
+my_list = [1, 2, 3, 4, 5]
+print("List:", my_list)
 
-# End of sorting_algorithms.py file
+# Sets
+my_set = {1, 2, 3, 4, 5}
+print("Set:", my_set)
+
+# Dictionaries
+my_dict = {'name': 'John', 'age': 25, 'city': 'New York'}
+print("Dictionary:", my_dict)
+
+# Tuples
+my_tuple = (1, 2, 3, 4, 5)
+print("Tuple:", my_tuple)
