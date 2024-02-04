@@ -162,3 +162,19 @@ numbers_tuple = (5, 3, 8, 1, 7)
 # Sorting the tuple
 sorted_numbers = sorted(numbers_tuple)
 print("Sorted Numbers:", sorted_numbers)
+
+# ----------------------------------------------
+# Sorting and Looping with Tuples
+# ----------------------------------------------
+
+# Tuple of numbers
+numbers_tuple = (5, 3, 8, 1, 7)
+
+# Sorting the tuple
+sorted_numbers = sorted(numbers_tuple)
+print("Sorted Numbers:", sorted_numbers)
+
+# Looping through the tuple
+for num in numbers_tuple:
+    print("Number:", num)
+    
