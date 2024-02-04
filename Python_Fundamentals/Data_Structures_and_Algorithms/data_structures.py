@@ -178,3 +178,29 @@ print("Sorted Numbers:", sorted_numbers)
 for num in numbers_tuple:
     print("Number:", num)
     
+# ----------------------------------------------
+# Operations on Data Structures
+# ----------------------------------------------
+
+# List Operations
+my_list.append(6)
+my_list.remove(3)
+my_list.extend([7, 8, 9])
+
+# Set Operations
+my_set.add(6)
+my_set.discard(3)
+my_set.update({10, 11, 12})
+
+# Dictionary Operations
+del my_dict['gender']
+my_dict['city'] = 'San Francisco'
+
+# Display the modified data structures
+print("Modified List:", my_list)
+print("Modified Set:", my_set)
+print("Modified Dictionary:", my_dict)
+
+# ----------------------------------------------
+# Conclusion
+# ----------------------------------------------
