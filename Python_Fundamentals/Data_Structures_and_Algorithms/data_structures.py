@@ -102,3 +102,22 @@ print("Age:", age)
 # Checking if a key exists
 if 'city' in my_dict:
     print("City exists in the dictionary.")
+    
+# Updating multiple key/value pairs
+my_dict.update({'occupation': 'Engineer', 'country': 'USA'})
+
+# Getting all keys and values
+all_keys = my_dict.keys()
+all_values = my_dict.values()
+
+# Removing a key and its corresponding value
+removed_value = my_dict.pop('gender')
+
+# Safely retrieving a value with a default
+height = my_dict.get('height', 'Not specified')
+
+# Clearing all key/value pairs in a dictionary
+my_dict.clear()
+
+# Dictionary comprehension
+new_dict = {key: value * 2 for key, value in my_dict.items()}
