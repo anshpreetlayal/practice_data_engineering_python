@@ -136,3 +136,29 @@ is_equal = dict1 == dict2
 
 # Dictionary comprehension with condition
 even_squared_values = {num: num**2 for num in range(10) if num % 2 == 0}
+
+# ----------------------------------------------
+# Multi-Step Tasks with Tuples
+# ----------------------------------------------
+
+# Tuple for a multi-step task
+task_description = ("Step 1: Initialize", "Step 2: Perform Operation", "Step 3: Finalize")
+
+# Display each step
+for step in task_description:
+    print(step)
+
+# Display each step
+for step in task_description:
+    print(step)
+
+# ----------------------------------------------
+# Sorting and Looping with Tuples
+# ----------------------------------------------
+
+# Tuple of numbers
+numbers_tuple = (5, 3, 8, 1, 7)
+
+# Sorting the tuple
+sorted_numbers = sorted(numbers_tuple)
+print("Sorted Numbers:", sorted_numbers)
