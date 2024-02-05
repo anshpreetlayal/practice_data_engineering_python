@@ -78,6 +78,17 @@ with open(json_file_path, 'r') as json_file:
     print("JSON Data:", json_data)
 
 
+# Creating the binary file
+# Generating and Writing Data into a binary file
+binary_generated_data = b'\x48\x65\x6C\x6C\x6F\x2C\x20\x74\x68\x69\x73\x20\x69\x73\x20\x61\x20\x62\x69\x6E\x61\x72\x79\x20\x66\x69\x6C\x65\x2E'
+
+with open('generated_data.bin', 'wb') as binary_generated_file:
+    binary_generated_file.write(binary_generated_data)
+
+# Reading from the binary file
+with open('generated_data.bin', 'rb') as binary_generated_file:
+    binary_generated_content = binary_generated_file.read()
+    print("Binary File Content:", binary_generated_content)
 
 
 # ----------------------------------------------
