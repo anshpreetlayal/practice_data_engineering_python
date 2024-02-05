@@ -88,3 +88,35 @@ class PizzaStore(ABC):
     """
     def __init__(self, name):
         self.name = name
+        
+    @abstractmethod
+    def create_pizza(self, pizza_type):
+        """
+        Abstract method to create a pizza.
+
+        Parameters:
+        - pizza_type (str): Type of pizza to create.
+
+        Returns:
+        - Pizza: An instance of the created pizza.
+        """
+        pass
+
+    def order_pizza(self, pizza_type):
+        """
+        Method to order a pizza.
+
+        Parameters:
+        - pizza_type (str): Type of pizza to order.
+
+        Returns:
+        - Pizza: An instance of the ordered pizza.
+        """
+        pizza = self.create_pizza(pizza_type)
+        print(f"{self.name} is preparing to make {pizza.name} pizza.")
+        pizza.prepare()
+        pizza.bake()
+        pizza.cut()
+        pizza.box()
+        print(f"{self.name} completed the order for {pizza.name} pizza.")
+        return pizza
