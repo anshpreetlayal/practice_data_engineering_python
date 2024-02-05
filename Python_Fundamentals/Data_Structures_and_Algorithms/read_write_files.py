@@ -69,6 +69,13 @@ with open(json_file_path, 'w') as json_file:
 print(f"Content has been written to {json_file_path}")
 
 
+# Reading from a JSON file
+import json
+
+json_file_path = 'example.json'
+with open(json_file_path, 'r') as json_file:
+    json_data = json.load(json_file)
+    print("JSON Data:", json_data)
 
 
 
