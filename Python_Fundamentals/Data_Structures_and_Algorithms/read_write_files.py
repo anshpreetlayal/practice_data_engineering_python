@@ -27,7 +27,6 @@ data = [
     ['Alice Brown', 28, 'San Francisco'],
     ['Charlie White', 35, 'Seattle'],
     ['Eva Black', 29, 'Miami'],
-    # Add more rows as needed
 ]
 
 with open(csv_file_path, 'w', newline='') as csv_file:
@@ -36,6 +35,14 @@ with open(csv_file_path, 'w', newline='') as csv_file:
 
 print(f"Content has been written to {csv_file_path}")
 
+# Reading from a CSV file
+import csv
+
+csv_file_path = 'example.csv'
+with open(csv_file_path, 'r') as csv_file:
+    csv_reader = csv.reader(csv_file)
+    csv_data = [row for row in csv_reader]
+    print("CSV Data:", csv_data)
 
 
 
