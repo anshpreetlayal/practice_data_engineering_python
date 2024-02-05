@@ -71,3 +71,20 @@ class PepperoniPizza(Pizza):
     """
     def prepare(self):
         print("Preparing Pepperoni pizza with tomato sauce, mozzarella, and pepperoni.")
+
+# ----------------------------------------------
+# Creator Interface: PizzaStore
+# ----------------------------------------------
+
+class PizzaStore(ABC):
+    """
+    PizzaStore interface (Creator): Abstract class representing a pizza store.
+
+    Methods:
+    - order_pizza(type: str): Order a pizza of the specified type.
+
+    Attributes:
+    - name (str): The name of the pizza store.
+    """
+    def __init__(self, name):
+        self.name = name
