@@ -1,9 +1,3 @@
-'''
-todo:
-Write scripts using regular expressions to extract specific patterns from strings.
-Practice matching, searching, and replacing with regular expressions.
-'''
-
 # =======================================
 #      Regular Expression Extraction
 # =======================================
@@ -16,18 +10,22 @@ import re
 
 # Function to extract data using regex
 def extract_data_with_regex(pattern, text):
+    """
+    Extracts data from a text using a specified regular expression pattern.
+
+    Parameters:
+    - pattern (str): The regular expression pattern to match.
+    - text (str): The input text from which to extract data.
+
+    Returns:
+    - str or None: The extracted data if a match is found, or None otherwise.
+    """
     match = re.search(pattern, text)
     if match:
         return match.group()
     else:
         return None
-
-# Example usage
-text_data = "Sample text with 123 and ABC"
-pattern = r'\d+'
-result = extract_data_with_regex(pattern, text_data)
-print("Extracted Data:", result)
-
+    
 # ----------------------------------------------
 # Conclusion
 # ----------------------------------------------
