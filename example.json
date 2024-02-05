@@ -1,0 +1,49 @@
+{
+  "people": [
+    {
+      "name": "John Doe",
+      "age": 25,
+      "city": "New York"
+    },
+    {
+      "name": "Jane Smith",
+      "age": 30,
+      "city": "Los Angeles"
+    },
+    {
+      "name": "Bob Johnson",
+      "age": 22,
+      "city": "Chicago"
+    },
+    {
+      "name": "Alice Brown",
+      "age": 28,
+      "city": "San Francisco"
+    },
+    {
+      "name": "Charlie White",
+      "age": 35,
+      "city": "Seattle"
+    },
+    {
+      "name": "Eva Black",
+      "age": 29,
+      "city": "Miami"
+    },
+    {
+      "name": "David Green",
+      "age": 32,
+      "city": "Dallas"
+    },
+    {
+      "name": "Grace Taylor",
+      "age": 27,
+      "city": "Boston"
+    },
+    {
+      "name": "Frank Miller",
+      "age": 40,
+      "city": "Denver"
+    }
+  ]
+}

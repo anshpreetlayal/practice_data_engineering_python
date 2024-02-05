@@ -45,8 +45,28 @@ with open(csv_file_path, 'r') as csv_file:
     print("CSV Data:", csv_data)
 
 
+# Creating a JSON file 
+import json
 
+json_file_path = 'example.json'
+data = {
+    "people": [
+        {"name": "John Doe", "age": 25, "city": "New York"},
+        {"name": "Jane Smith", "age": 30, "city": "Los Angeles"},
+        {"name": "Bob Johnson", "age": 22, "city": "Chicago"},
+        {"name": "Alice Brown", "age": 28, "city": "San Francisco"},
+        {"name": "Charlie White", "age": 35, "city": "Seattle"},
+        {"name": "Eva Black", "age": 29, "city": "Miami"},
+        {"name": "David Green", "age": 32, "city": "Dallas"},
+        {"name": "Grace Taylor", "age": 27, "city": "Boston"},
+        {"name": "Frank Miller", "age": 40, "city": "Denver"}
+    ]
+}
 
+with open(json_file_path, 'w') as json_file:
+    json.dump(data, json_file, indent=2)
+
+print(f"Content has been written to {json_file_path}")
 
 
 
