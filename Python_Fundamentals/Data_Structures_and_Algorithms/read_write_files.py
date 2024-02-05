@@ -8,18 +8,20 @@ todo
 # =======================================
 #      Read/Write Operations on Files
 # =======================================
-
 # Python Fundamentals for Data Engineering
+
 # read_write_files.py: Covers reading from and writing to files.
 
-# Writing to a file
+# Writing to a text file
 with open('example.txt', 'w') as file:
     file.write("Hello, this is an example file.")
 
-# Reading from a file
+# Reading from a text file
 with open('example.txt', 'r') as file:
     content = file.read()
     print("File Content:", content)
+
+
 
 # ----------------------------------------------
 # Conclusion
