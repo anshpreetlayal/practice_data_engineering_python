@@ -136,3 +136,16 @@ class NYStylePizzaStore(PizzaStore):
             return PepperoniPizza("NY Style Pepperoni")
         else:
             raise ValueError(f"Invalid pizza type: {pizza_type}")
+
+# ----------------------------------------------
+# Main Program
+# ----------------------------------------------
+
+# Create an instance of the NYStylePizzaStore
+ny_pizza_store = NYStylePizzaStore("NY Pizza Store")
+
+# Order Margherita pizza
+margherita_pizza = ny_pizza_store.order_pizza("Margherita")
+
+# Order Pepperoni pizza
+pepperoni_pizza = ny_pizza_store.order_pizza("Pepperoni")
