@@ -120,3 +120,19 @@ class PizzaStore(ABC):
         pizza.box()
         print(f"{self.name} completed the order for {pizza.name} pizza.")
         return pizza
+
+# ----------------------------------------------
+# Concrete Creator Class: NYStylePizzaStore
+# ----------------------------------------------
+
+class NYStylePizzaStore(PizzaStore):
+    """
+    Concrete Creator: New York Style Pizza Store.
+    """
+    def create_pizza(self, pizza_type):
+        if pizza_type == "Margherita":
+            return MargheritaPizza("NY Style Margherita")
+        elif pizza_type == "Pepperoni":
+            return PepperoniPizza("NY Style Pepperoni")
+        else:
+            raise ValueError(f"Invalid pizza type: {pizza_type}")
