@@ -78,7 +78,6 @@ with open(json_file_path, 'r') as json_file:
     print("JSON Data:", json_data)
 
 
-# Creating the binary file
 # Generating and Writing Data into a binary file
 binary_generated_data = b'\x48\x65\x6C\x6C\x6F\x2C\x20\x74\x68\x69\x73\x20\x69\x73\x20\x61\x20\x62\x69\x6E\x61\x72\x79\x20\x66\x69\x6C\x65\x2E'
 
@@ -91,6 +90,23 @@ with open('generated_data.bin', 'rb') as binary_generated_file:
     print("Binary File Content:", binary_generated_content)
 
 
+# Reading binary data using urllib
+import urllib.request
+
+binary_file_url = 'https://example.com/example.bin'
+binary_data = urllib.request.urlopen(binary_file_url).read()
+
+# Processing or saving the binary data as needed
+# for example -writing to a local binary file
+with open('downloaded_example.bin', 'wb') as binary_file:
+    binary_file.write(binary_data)
+
+# Reading from the downloaded binary file
+with open('downloaded_example.bin', 'rb') as downloaded_binary_file:
+    downloaded_binary_content = downloaded_binary_file.read()
+    print("Downloaded Binary File Content:", downloaded_binary_content)
+
+    
 # ----------------------------------------------
 # Conclusion
 # ----------------------------------------------
