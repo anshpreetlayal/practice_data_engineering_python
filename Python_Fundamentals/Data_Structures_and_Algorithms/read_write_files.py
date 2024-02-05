@@ -1,10 +1,3 @@
-
-'''
-todo
--Write programs that read data from files (e.g., text, CSV, JSON) and manipulate it.
-- Reading binary files using urllib
-- Create scripts that generate and write data into files.'''
-
 # =======================================
 #      Read/Write Operations on Files
 # =======================================
@@ -20,6 +13,36 @@ with open('example.txt', 'w') as file:
 with open('example.txt', 'r') as file:
     content = file.read()
     print("File Content:", content)
+
+
+#creating a csv file
+import csv
+
+csv_file_path = 'example.csv'
+data = [
+    ['Name', 'Age', 'City'],
+    ['John Doe', 25, 'New York'],
+    ['Jane Smith', 30, 'Los Angeles'],
+    ['Bob Johnson', 22, 'Chicago'],
+    ['Alice Brown', 28, 'San Francisco'],
+    ['Charlie White', 35, 'Seattle'],
+    ['Eva Black', 29, 'Miami'],
+    # Add more rows as needed
+]
+
+with open(csv_file_path, 'w', newline='') as csv_file:
+    csv_writer = csv.writer(csv_file)
+    csv_writer.writerows(data)
+
+print(f"Content has been written to {csv_file_path}")
+
+
+
+
+
+
+
+
 
 
 
