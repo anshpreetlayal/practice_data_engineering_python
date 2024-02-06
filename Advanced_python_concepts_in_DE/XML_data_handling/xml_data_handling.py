@@ -3,7 +3,7 @@
 # =======================================
 
 # Python Fundamentals for Data Engineering
-# xml_processing.py: Demonstrates parsing and manipulating XML data.
+# xml_data_handling.py: Demonstrates parsing and manipulating XML data.
 
 # Importing necessary libraries
 import xml.etree.ElementTree as ET
@@ -44,3 +44,21 @@ for book in root.findall('book'):
     category = book.get('category')
 
     print(f"Title: {title}, Author: {author}, Year: {year}, Price: {price}, Category: {category}")
+
+# Modifying XML data
+for book in root.findall('book'):
+    if book.find('title').text == 'Harry Potter':
+        book.find('price').text = '35.00'
+
+# Converting modified XML data back to string
+modified_xml_data = ET.tostring(root, encoding='utf8').decode('utf8')
+print("\nModified XML Data:")
+print(modified_xml_data)
+
+# ----------------------------------------------
+# Conclusion
+# ----------------------------------------------
+
+print("XML Processing - xml_data_handling.py execution complete.")
+
+# End of xml_data_handling.py file
