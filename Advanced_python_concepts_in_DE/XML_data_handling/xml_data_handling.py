@@ -31,3 +31,16 @@ xml_data = '''
   </book>
 </bookstore>
 '''
+
+# Parsing XML data
+root = ET.fromstring(xml_data)
+
+# Accessing elements and attributes
+for book in root.findall('book'):
+    title = book.find('title').text
+    author = book.find('author').text
+    year = book.find('year').text
+    price = book.find('price').text
+    category = book.get('category')
+
+    print(f"Title: {title}, Author: {author}, Year: {year}, Price: {price}, Category: {category}")
