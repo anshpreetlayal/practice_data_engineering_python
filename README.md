@@ -35,6 +35,13 @@ This repository documents my journey through Python in the realm of data enginee
 
 - **`oop_basics.py`**: Engages in creating classes, objects, inheritance, and polymorphism.
 - **`design_patterns.py`**: Explores design patterns and adheres to best practices in Object-Oriented Programming.
+- **`database_operations`**: Contains scripts and modules for managing databases, including CRUD operations (Create, Read, Update, Delete). You can organize it further into subdirectories based on different database systems (e.g., MySQL, SQLite, MongoDB).
+- **`database_table_relationships`**: Contains SQL scripts, diagrams, and documentation illustrating how data is stored across multiple tables in a relational database. 
+- **`unicode_and_string_manipulation`**: Contains code snippets, tutorials, and examples showcasing the use of Unicode characters and string manipulation techniques in Python. Cover topics such as encoding, decoding, formatting, and handling multilingual text.
+- **`search_engine_basics`**: 
+- **`data_processing_and_analysis`**:
+- **`email_data_visualizations`**: 
+
 
 ## Concurrency and Parallel Processing
 
