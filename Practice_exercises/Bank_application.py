@@ -1,4 +1,8 @@
 def get_pin():
+    """
+    Function to get the user's PIN with 3 attempts allowed.
+    Returns True if the correct PIN is entered within the attempts, False otherwise.
+    """
     attempts = 3
     correct_pin = "1234"  
     while attempts >0 :
@@ -11,11 +15,20 @@ def get_pin():
 
     print("Too many incorrect attempts. Exiting.")
     return False
-
+    
+    
+    """
+    Function to display the remainign balance
+    """
 def display_balance(balance):
     print(f"Your current balance is ${balance:.2f}")
 
+
+     
 def make_withdrawal(balance):
+    """
+     Function to withdraw amount based on user's input
+     """
     try:
         print("Withdrawal Options:")
         print("1. $20")
@@ -46,8 +59,11 @@ def make_withdrawal(balance):
     except ValueError:
         print("Invalid input. Please enter a valid amount.")
     return balance
-
+    
 def make_deposit(balance):
+    """
+    function to deposit money with users input
+    """
     try:
         amount = float(input("Enter the amount to deposit: $"))
         if amount <= 0:
@@ -85,3 +101,9 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+    
+    
+    
+    
+    
