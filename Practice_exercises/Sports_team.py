@@ -60,3 +60,60 @@ with open(union_basketball_baseball_file, 'w') as f:
     for player in union:
         f.write(player + '\n')
 
+# Task 8
+difference_basketball_soccer_file = os.path.join(data_dir, 'difference_basketball_soccer.txt')
+difference_baseball_basketball_file = os.path.join(data_dir, 'difference_baseball_basketball.txt')
+
+with open(difference_basketball_soccer_file, 'w') as f:
+    difference = basketball_team_5.difference(soccer_team_11)
+    for player in difference:
+        f.write(player + '\n')
+
+with open(difference_baseball_basketball_file, 'w') as f:
+    difference = baseball_team.difference(basketball_team_5)
+    for player in difference:
+        f.write(player + '\n')
+
+# Task 9
+nested_tuple = (1, 2, (3, 4, (6, 7)))
+nested_tuple_file = os.path.join(data_dir, 'nested_tuple.txt')
+
+with open(nested_tuple_file, 'w') as f:
+    f.write(str(nested_tuple))
+
+# Task 10
+flattened_tuple = ()
+with open(nested_tuple_file, 'r') as f:
+    flattened_tuple = eval(f.read())
+flattened_tuple_file = os.path.join(data_dir, 'flattened_tuple.txt')
+
+# Task 11
+with open(flattened_tuple_file, 'w') as f:
+    for item in flattened_tuple:
+        if isinstance(item, int):
+            f.write(str(item) + '\n')
+        else:
+            for subitem in item:
+                f.write(str(subitem) + '\n')
+
+# Task 12
+number_range = input("Enter a range of numbers (e.g., 1 10): ").split()
+start, end = int(number_range[0]), int(number_range[1])
+even_numbers = [str(num) for num in range(start, end + 1) if num % 2 == 0]
+even_numbers_file = os.path.join(data_dir, 'even_numbers.txt')
+
+# Task 13
+with open(even_numbers_file, 'w') as f:
+    for num in even_numbers:
+        f.write(num + '\n')
+
+# Task 14
+number_range = input("Enter a range of numbers (e.g., 1 10): ").split()
+start, end = int(number_range[0]), int(number_range[1])
+squared_numbers = [str(num * num) for num in range(start, end + 1)]
+squared_numbers_file = os.path.join(data_dir, 'squared_numbers.txt')
+
+# Task 15
+with open(squared_numbers_file, 'w') as f:
+    for num in squared_numbers:
+        f.write(num + '\n')
